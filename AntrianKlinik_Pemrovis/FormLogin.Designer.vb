@@ -85,7 +85,7 @@ Partial Class FormLogin
         ' lblHeading
         ' 
         lblHeading.AutoSize = True
-        lblHeading.Location = New Point(110, 54)
+        lblHeading.Location = New Point(107, 61)
         lblHeading.Name = "lblHeading"
         lblHeading.Size = New Size(263, 20)
         lblHeading.TabIndex = 6

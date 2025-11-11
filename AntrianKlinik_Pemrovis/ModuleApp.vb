@@ -2,7 +2,6 @@
     Public Structure UserAccount
         Public Username As String
         Public Password As String ' NOTE: plain text for prototype only
-        Public FullName As String
     End Structure
 
     Public Users As New List(Of UserAccount)
@@ -17,7 +16,6 @@
             Dim u As UserAccount
             u.Username = "user1"
             u.Password = "pass1"
-            u.FullName = "User Satu"
             Users.Add(u)
 
             ' (Admin tidak dimasukkan ke Users list; dicek terpisah)
