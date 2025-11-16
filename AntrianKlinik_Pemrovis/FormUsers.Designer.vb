@@ -30,7 +30,7 @@ Partial Class FormUsers
         Label2 = New Label()
         lblNext = New Label()
         lblYour = New Label()
-        DataGridView1 = New DataGridView()
+        dgvHasilSekilas = New DataGridView()
         lblCurrent = New Label()
         Label1 = New Label()
         pnlHeading = New Panel()
@@ -56,15 +56,15 @@ Partial Class FormUsers
         Label6 = New Label()
         Label5 = New Label()
         pnlRiwayat = New Panel()
-        DataGridView2 = New DataGridView()
+        dgvRiwayat = New DataGridView()
         Label13 = New Label()
         pnlDashboard.SuspendLayout()
         pnlInfo.SuspendLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgvHasilSekilas, ComponentModel.ISupportInitialize).BeginInit()
         pnlHeading.SuspendLayout()
         pnlPendaftaran.SuspendLayout()
         pnlRiwayat.SuspendLayout()
-        CType(DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgvRiwayat, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' pnlDashboard
@@ -85,7 +85,7 @@ Partial Class FormUsers
         pnlInfo.Controls.Add(Label2)
         pnlInfo.Controls.Add(lblNext)
         pnlInfo.Controls.Add(lblYour)
-        pnlInfo.Controls.Add(DataGridView1)
+        pnlInfo.Controls.Add(dgvHasilSekilas)
         pnlInfo.Controls.Add(lblCurrent)
         pnlInfo.Controls.Add(Label1)
         pnlInfo.Location = New Point(0, 79)
@@ -155,14 +155,14 @@ Partial Class FormUsers
         lblYour.TabIndex = 12
         lblYour.Text = "B109"
         ' 
-        ' DataGridView1
+        ' dgvHasilSekilas
         ' 
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(0, 293)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(442, 224)
-        DataGridView1.TabIndex = 11
+        dgvHasilSekilas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvHasilSekilas.Location = New Point(0, 293)
+        dgvHasilSekilas.Name = "dgvHasilSekilas"
+        dgvHasilSekilas.RowHeadersWidth = 51
+        dgvHasilSekilas.Size = New Size(442, 224)
+        dgvHasilSekilas.TabIndex = 11
         ' 
         ' lblCurrent
         ' 
@@ -411,21 +411,21 @@ Partial Class FormUsers
         ' 
         ' pnlRiwayat
         ' 
-        pnlRiwayat.Controls.Add(DataGridView2)
+        pnlRiwayat.Controls.Add(dgvRiwayat)
         pnlRiwayat.Controls.Add(Label13)
         pnlRiwayat.Location = New Point(12, 95)
         pnlRiwayat.Name = "pnlRiwayat"
         pnlRiwayat.Size = New Size(448, 599)
         pnlRiwayat.TabIndex = 5
         ' 
-        ' DataGridView2
+        ' dgvRiwayat
         ' 
-        DataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView2.Location = New Point(3, 73)
-        DataGridView2.Name = "DataGridView2"
-        DataGridView2.RowHeadersWidth = 51
-        DataGridView2.Size = New Size(442, 523)
-        DataGridView2.TabIndex = 12
+        dgvRiwayat.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvRiwayat.Location = New Point(3, 73)
+        dgvRiwayat.Name = "dgvRiwayat"
+        dgvRiwayat.RowHeadersWidth = 51
+        dgvRiwayat.Size = New Size(442, 523)
+        dgvRiwayat.TabIndex = 12
         ' 
         ' Label13
         ' 
@@ -453,14 +453,14 @@ Partial Class FormUsers
         pnlDashboard.ResumeLayout(False)
         pnlInfo.ResumeLayout(False)
         pnlInfo.PerformLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvHasilSekilas, ComponentModel.ISupportInitialize).EndInit()
         pnlHeading.ResumeLayout(False)
         pnlHeading.PerformLayout()
         pnlPendaftaran.ResumeLayout(False)
         pnlPendaftaran.PerformLayout()
         pnlRiwayat.ResumeLayout(False)
         pnlRiwayat.PerformLayout()
-        CType(DataGridView2, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvRiwayat, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -475,7 +475,7 @@ Partial Class FormUsers
     Friend WithEvents lblCurrent As Label
     Friend WithEvents lblNext As Label
     Friend WithEvents lblYour As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgvHasilSekilas As DataGridView
     Friend WithEvents Label4 As Label
     Friend WithEvents btnKuitansi As Button
     Friend WithEvents Label3 As Label
@@ -498,6 +498,6 @@ Partial Class FormUsers
     Friend WithEvents btnKonfirm As Button
     Friend WithEvents btnBatal As Button
     Friend WithEvents pnlRiwayat As Panel
-    Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents dgvRiwayat As DataGridView
     Friend WithEvents Label13 As Label
 End Class

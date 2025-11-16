@@ -22,4 +22,16 @@
         pnlPendaftaran.Visible = False
         pnlRiwayat.Visible = True
     End Sub
+
+    Private Sub btnKuitansi_Click(sender As Object, e As EventArgs) Handles btnKuitansi.Click
+        Dim f As New FormPesan()
+        f.TampilKuitansi()
+        f.Show()
+    End Sub
+
+    Private Sub btnKonfirm_Click(sender As Object, e As EventArgs) Handles btnKonfirm.Click
+        Dim f As New FormPesan()
+        f.TampilPesanNo()
+        f.Show()
+    End Sub
 End Class
